@@ -1,20 +1,9 @@
-const getNotes = require("./notes.js") 
+const validator = require('validator') // getting npm package name 
+const getNotes = require("./notes.js") // getting notes.js file 
 
 const msg = getNotes()
 console.log(msg)
 
+console.log(validator.isURL('www.google.'))
 
 
-// const add = require('./utils.js') // loading the utils.js file 
-
-// const sum = add(4, -2)
-
-// console.log(sum)
-
-/* 
-Challenge: Define and yse a function in a new file 
-1. Create a new file called notes.js 
-2. Create getNotes function that returns "Your notes..."
-3. Export getNotes function 
-4. From app.js, load in and call the function printing message to console 
-*/ 
