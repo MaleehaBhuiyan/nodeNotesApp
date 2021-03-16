@@ -4,9 +4,8 @@ const getNotes = require("./notes.js") // getting notes.js file
 const msg = getNotes()
 console.log(msg)
 
-console.log(chalk.green("Success!"))
-console.log(chalk.bold("Maleeha Bhuiyan"))
-console.log(chalk.inverse("This is chalk in inverse"))
+console.log(chalk.green.bold.inverse("Success!"))
+
 
 
 /*
