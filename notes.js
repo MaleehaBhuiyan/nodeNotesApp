@@ -6,6 +6,9 @@ const addNote = (title, body) => {
 
     const duplicateNote = notes.find(note => note.title === title)
 
+    debugger
+
+
     if (!duplicateNote){
         notes.push({
             title: title,
@@ -74,7 +77,6 @@ const loadNotes = () =>  {
 
 
 module.exports = {
-    getNotes: getNotes,
     addNote: addNote,
     removeNote: removeNote,
     listNotes: listNotes,
