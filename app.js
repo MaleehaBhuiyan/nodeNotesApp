@@ -42,7 +42,7 @@ yargs.command({
 yargs.command({
     command: 'read',
     describe: 'Read a note',
-    handler: ()=> {console.log("Reading a note")}
+    handler: (argv)=> {notes.readNote(argv.title)}
 })
 
 yargs.command({
